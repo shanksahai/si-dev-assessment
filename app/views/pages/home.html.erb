@@ -18,12 +18,10 @@ p  {
 
 </html>
 
-<%= form_tag do %>
+<%= form_tag("/sms/send", method: "post") do %>
   <%= label_tag("Enter Text Here:") %>
-  <%= text_field_tag(:q) %>
-<% end %>
-<%= form_tag do %>
+  <%= text_field_tag(:text) %>
   <%= label_tag("Enter Phone Number Here:") %>
-  <%= text_field_tag(:q) %>
+  <%= text_field_tag(:phone_number) %>
   <%= submit_tag("Send Text") %>
 <% end %>
