@@ -1,6 +1,23 @@
 <h1>Shanker's SMS Page</h1>
 <p>Enter Text in the Form below and send a text</p>
 
+<style>
+h1 {
+    color: blue;
+    font-family: helvetica;
+    font-size: 200%;
+}
+p  {
+    color: red;
+    font-family: helvetica;
+    font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+</html>
+
 <%= form_tag do %>
   <%= label_tag("Enter Text Here:") %>
   <%= text_field_tag(:q) %>
